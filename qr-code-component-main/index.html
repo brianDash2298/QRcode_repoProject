@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --clr-light: hsl(0, 0%, 100%);
+      --clr-darkLight: hsl(212, 45%, 89%);
+      --clr-lightBlue: hsl(216, 15%, 48%);
+      --clr-blue: hsl(218, 44%, 22%);
+    }
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Outfit", sans-serif;
+    }
+
+    body{
+      background: var(--clr-darkLight);
+    }
+
+    .wrapper{
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flexContainer{
+      height: 68vh;
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: var(--clr-light);
+      border-radius: 20px;
+      padding-bottom: 1rem;
+    }
+
+    .wrapper .flexContainer img{
+      margin-bottom: 2rem;
+      border-radius: 15px;
+    }
+
+    .wrapper .flexContainer{
+      text-align: center;
+    }
+
+    h2{
+      margin-bottom: 15px;
+      padding: 0 3.5rem;
+    }
+
+    p{
+      padding: 0 3rem;
+    }
+
+    @media screen and (max-width: 1440px){
+      .wrapper{
+        width: 100%;
+        /* max-width: 960px; */
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flexContainer{
+        height: 65vh;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--clr-light);
+        border-radius: 20px;
+        padding-bottom: 1rem;
+      }
+
+      .wrapper .flexContainer img{
+        margin-bottom: 2rem;
+        border-radius: 15px;
+      }
+
+      .wrapper .flexContainer h2, p{
+        text-align: center;
+      }
+
+      .wrapper .flexContainer h2{
+        padding: 0 3.5rem;
+      }
+
+      .wrapper .flexContainer p{
+        padding: 0 4.5rem;
+      }
+
+      /* p{
+        margin-top: 15px;
+      } */
+    }
+
+    @media screen and (max-width: 1024px){
+      .wrapper .flexContainer img{
+        width: 300px;
+        height: auto;
+      }
+
+      .flexContainer{
+        width: 35%;
+        height: 75vh;
+      }
+
+      .wrapper .flexContainer h2{
+        padding: 0 1rem ;
+      }
+
+      .wrapper .flexContainer p{
+        padding: 0 2rem ;
+      }
+      
+    }
+
+    @media screen and (max-width: 768px){
+      .wrapper .flexContainer img{
+        width: 300px;
+        height: auto;
+      }
+
+      .flexContainer{
+        width: 43%;
+        height: 73vh;
+      }
+
+      .wrapper .flexContainer h2{
+        padding: 0 1rem ;
+      }
+
+      .wrapper .flexContainer p{
+        padding: 0 2rem ;
+      }
+    }
+
+    @media screen and (max-width: 582px) {
+      .wrapper .flexContainer img{
+        width: 300px;
+        height: auto;
+      }
+
+      .flexContainer{
+        /* border: solid red; */
+        width: 56%;
+        height: 74vh;
+      }
+
+      .wrapper .flexContainer h2{
+        padding: 0 1rem;
+      }
+
+      .wrapper .flexContainer p{
+        padding: 0 2rem;
+        margin-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 426px){
+      .wrapper .flexContainer img{
+        width: 300px;
+        height: auto;
+      }
+
+      .flexContainer{
+        width: 77%;
+        height: 73vh;
+      }
+
+      .wrapper .flexContainer h2{
+        padding: 0 1rem ;
+      }
+
+      .wrapper .flexContainer p{
+        padding: 0 2rem ;
+      }
+
+      
+    }
+
+    @media screen and (max-width: 376px){
+      .wrapper .flexContainer img{
+        width: 300px;
+        height: auto;
+      }
+
+      .flexContainer{
+        /* border: solid red; */
+        width: 89%;
+        height: 75vh;
+      }
+
+      .wrapper .flexContainer h2{
+        padding: 0 1rem;
+      }
+
+      .wrapper .flexContainer p{
+        padding: 0 2rem;
+        margin-top: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="flexContainer">
+      <img src="/images/image-qr-code.png" alt="qr_code_img" height="auto" width="390">
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </section>
+  </div>
+
+</body>
+</html>
